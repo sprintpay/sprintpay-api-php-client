@@ -2,17 +2,17 @@
     "name": "/",
     "description": "",
     "keywords": [
-        "swagger",
+        "sprintpay",
         "php",
         "sdk",
         "api"
     ],
-    "homepage": "http://swagger.io",
+    "homepage": "http://sprintpay.com",
     "license": "proprietary",
     "authors": [
         {
-            "name": "Swagger and contributors",
-            "homepage": "https://github.com/swagger-api/swagger-codegen"
+            "name": "SprintPay and contributors",
+            "homepage": "https://github.com/sprintpay/sprintpay-api-php-client"
         }
     ],
     "require": {
@@ -28,9 +28,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "lib/" }
+        "psr-4": { "SprintPay\\Client\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Swagger\\Client\\" : "test/" }
+        "psr-4": { "SprintPay\\Client\\" : "test/" }
     }
 }
