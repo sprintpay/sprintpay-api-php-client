@@ -1,4 +1,4 @@
-# Sprintpay\Client\CardPaymentApi
+# SprintPay\Client\CardPaymentApi
 
 All URIs are relative to *http://197.159.2.146:7086/sprintpayapi*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **cardStatus**
-> \Sprintpay\Client\Model\PaymentCardReponse cardStatus($transaction)
+> \SprintPay\Client\Model\PaymentCardReponse cardStatus($transaction)
 
 check the status of card payment request by transaction id
 
@@ -21,15 +21,15 @@ check the status of card payment request using transaction id who are provider i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: DateTime
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('datetime', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyParameter('datetime', 'YOUR_DATETIME');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
 // Configure API key authorization: autorization
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyParameter('authorization', 'YOUR_AUTORIZATION');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
-$apiInstance = new Sprintpay\Client\Api\CardPaymentApi(
+$apiInstance = new SprintPay\Client\Api\CardPaymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Sprintpay\Client\Model\PaymentCardReponse**](../Model/PaymentCardReponse.md)
+[**\SprintPay\Client\Model\PaymentCardReponse**](../Model/PaymentCardReponse.md)
 
 ### Authorization
 
@@ -80,21 +80,21 @@ Make an payment using credit card
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: DateTime
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('datetime', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKey('datetime', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
 // Configure API key authorization: autorization
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
-$apiInstance = new Sprintpay\Client\Api\CardPaymentApi(
+$apiInstance = new SprintPay\Client\Api\CardPaymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Sprintpay\Client\Model\Card(); // \Sprintpay\Client\Model\Card | Created card object
+$body = new \SprintPay\Client\Model\Card(); // \SprintPay\Client\Model\Card | Created card object
 
 try {
     $result = $apiInstance->paymentcard($body);
@@ -109,7 +109,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Sprintpay\Client\Model\Card**](../Model/Card.md)| Created card object |
+ **body** | [**\SprintPay\Client\Model\Card**](../Model/Card.md)| Created card object |
 
 ### Return type
 

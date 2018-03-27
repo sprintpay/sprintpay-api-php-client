@@ -1,4 +1,4 @@
-# Sprintpay\Client\MobilePaymentApi
+# SprintPay\Client\MobilePaymentApi
 
 All URIs are relative to *http://197.159.2.146:7086/sprintpayapi*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **mobilemoney**
-> \Sprintpay\Client\Model\PaymentMobileReponse mobilemoney($body)
+> \SprintPay\Client\Model\PaymentMobileReponse mobilemoney($body)
 
 Make a new mobilemoney payment
 
@@ -22,21 +22,21 @@ Make an payment using MobileMoney
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: DateTime
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('datetime', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyParameter('datetime', 'YOUR_DATETIME');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
 // Configure API key authorization: autorization
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyParameter('authorization', 'YOUR_AUTORIZATION');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
-$apiInstance = new Sprintpay\Client\Api\MobilePaymentApi(
+$apiInstance = new SprintPay\Client\Api\MobilePaymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Sprintpay\Client\Model\Orangemoney(); // \Sprintpay\Client\Model\Orangemoney | Mobilemoney object that needs to be added to the body of request
+$body = new \SprintPay\Client\Model\Orangemoney(); // \SprintPay\Client\Model\Orangemoney | Mobilemoney object that needs to be added to the body of request
 
 try {
     $result = $apiInstance->mobilemoney($body);
@@ -51,11 +51,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Sprintpay\Client\Model\Orangemoney**](../Model/Orangemoney.md)| Mobilemoney object that needs to be added to the body of request |
+ **body** | [**\SprintPay\Client\Model\Orangemoney**](../Model/Orangemoney.md)| Mobilemoney object that needs to be added to the body of request |
 
 ### Return type
 
-[**\Sprintpay\Client\Model\PaymentMobileReponse**](../Model/PaymentMobileReponse.md)
+[**\SprintPay\Client\Model\PaymentMobileReponse**](../Model/PaymentMobileReponse.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **mobilestatus**
-> \Sprintpay\Client\Model\PaymentMobileReponse mobilestatus($processing_number)
+> \SprintPay\Client\Model\PaymentMobileReponse mobilestatus($processing_number)
 
 check the status of mobile payment request using processingNumber
 
@@ -81,15 +81,15 @@ processingNumber returned by the previous endpoint(Alpha-numeric, space and some
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: DateTime
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('datetime', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKey('datetime', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
 // Configure API key authorization: autorization
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
-$apiInstance = new Sprintpay\Client\Api\MobilePaymentApi(
+$apiInstance = new SprintPay\Client\Api\MobilePaymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Sprintpay\Client\Model\PaymentMobileReponse**](../Model/PaymentMobileReponse.md)
+[**\SprintPay\Client\Model\PaymentMobileReponse**](../Model/PaymentMobileReponse.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **orangemoney**
-> \Sprintpay\Client\Model\PaymentMobileReponse orangemoney($body)
+> \SprintPay\Client\Model\PaymentMobileReponse orangemoney($body)
 
 Make an payment using orangemoney
 
@@ -140,21 +140,21 @@ Make an payment using orangemoney
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: DateTime
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('datetime', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKey('datetime', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('datetime', 'Bearer');
 // Configure API key authorization: autorization
-$config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
+$config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKey('authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Sprintpay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
+// $config = SprintPay\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('authorization', 'Bearer');
 
-$apiInstance = new Sprintpay\Client\Api\MobilePaymentApi(
+$apiInstance = new SprintPay\Client\Api\MobilePaymentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Sprintpay\Client\Model\Orangemoney(); // \Sprintpay\Client\Model\Orangemoney | object that needs to be added to the body of request
+$body = new \SprintPay\Client\Model\Orangemoney(); // \SprintPay\Client\Model\Orangemoney | object that needs to be added to the body of request
 
 try {
     $result = $apiInstance->orangemoney($body);
@@ -169,11 +169,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Sprintpay\Client\Model\Orangemoney**](../Model/Orangemoney.md)| object that needs to be added to the body of request |
+ **body** | [**\SprintPay\Client\Model\Orangemoney**](../Model/Orangemoney.md)| object that needs to be added to the body of request |
 
 ### Return type
 
-[**\Sprintpay\Client\Model\PaymentMobileReponse**](../Model/PaymentMobileReponse.md)
+[**\SprintPay\Client\Model\PaymentMobileReponse**](../Model/PaymentMobileReponse.md)
 
 ### Authorization
 
